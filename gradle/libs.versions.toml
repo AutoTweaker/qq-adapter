@@ -1,0 +1,18 @@
+[versions]
+kotlin = "2.4.10"
+autotweaker = "0.2.0-alpha.7+5d41fd9a"
+serialization = "1.11.0"
+coroutines = "1.11.0"
+autoService = "1.1.1"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+autotweaker-plugin-sdk = { id = "io.github.autotweaker.plugin.sdk", version.ref = "autotweaker" }
+
+[libraries]
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+auto-service-annotations = { module = "com.google.auto.service:auto-service-annotations", version.ref = "autoService" }
+auto-service = { module = "com.google.auto.service:auto-service", version.ref = "autoService" }
