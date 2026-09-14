@@ -3,6 +3,7 @@ kotlin = "2.4.10"
 autotweaker = "0.2.0-alpha.7+5d41fd9a"
 serialization = "1.11.0"
 coroutines = "1.11.0"
+ktor = "3.5.2"
 autoService = "1.1.1"
 
 [plugins]
@@ -14,5 +15,8 @@ autotweaker-plugin-sdk = { id = "io.github.autotweaker.plugin.sdk", version.ref 
 [libraries]
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 auto-service-annotations = { module = "com.google.auto.service:auto-service-annotations", version.ref = "autoService" }
 auto-service = { module = "com.google.auto.service:auto-service", version.ref = "autoService" }

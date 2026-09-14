@@ -1,5 +1,5 @@
 /*
- * AutoTweaker QQ Adapter
+ * qq-adapter
  * Copyright (C) 2026  WhiteElephant-abc
  *
  * This program is free software: you can redistribute it and/or modify
@@ -42,6 +42,10 @@ repositories {
 dependencies {
 	implementation(libs.kotlinx.serialization.json)
 	implementation(libs.kotlinx.coroutines.core)
+	
+	implementation(libs.ktor.client.cio)
+	implementation(libs.ktor.client.websockets)
+	implementation(libs.ktor.serialization.kotlinx.json)
 	
 	implementation(libs.auto.service.annotations)
 	kapt(libs.auto.service)
